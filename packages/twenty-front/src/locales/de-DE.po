@@ -78,6 +78,18 @@ msgstr "[leere Zeichenfolge]"
 msgid "{0}"
 msgstr "{0}"
 
+#. js-lingui-id: 8oBg8K
+#. placeholder {1}: option.descriptionKey
+#: src/components/RTLLayoutList.tsx
+msgid "{1}"
+msgstr ""
+
+#. js-lingui-id: ZvcnWm
+#. placeholder {2}: option.labelKey
+#: src/components/RTLLayoutList.tsx
+msgid "{2}"
+msgstr ""
+
 #. js-lingui-id: ROdDR9
 #: src/modules/object-record/record-board/record-board-column/utils/computeAggregateValueAndLabel.ts
 msgid "{aggregateLabel} of {fieldLabel}"
@@ -1079,6 +1091,11 @@ msgstr "Wählen Sie zwischen OIDC- und SAML-Protokollen"
 msgid "Choose between Short and Full"
 msgstr "Wählen Sie zwischen Kurz und Voll"
 
+#. js-lingui-id: XzXMHk
+#: src/modules/ui/navigation/navigation-drawer/components/MultiWorkspaceDropdown/internal/MultiWorkspaceDropdownLanguagesComponents.tsx
+msgid "Choose Language"
+msgstr ""
+
 #. js-lingui-id: YcrXB2
 #: src/modules/settings/data-model/fields/forms/currency/components/SettingsDataModelFieldCurrencyForm.tsx
 msgid "Choose the default currency that will apply"
@@ -1568,6 +1585,12 @@ msgstr "Aktueller Wert aus der Serverumgebung. Setzen Sie einen benutzerdefinier
 #: src/modules/settings/admin-panel/components/SettingsAdminVersionContainer.tsx
 msgid "Current version"
 msgstr "Aktuelle Version"
+
+#. js-lingui-id: JsKDGk
+#. placeholder {0}: isRTL ? 'RTL' : 'LTR'
+#: src/components/RTLLayoutList.tsx
+msgid "Currently: {0}"
+msgstr ""
 
 #. js-lingui-id: 8Tg/JR
 #: src/modules/settings/roles/role-permissions/object-level-permissions/components/SettingsRolePermissionsObjectLevelObjectPicker.tsx
@@ -3314,6 +3337,7 @@ msgstr "Labor"
 
 #. js-lingui-id: vXIe7J
 #: src/pages/settings/profile/appearance/components/SettingsExperience.tsx
+#: src/components/LanguageSwitcher.tsx
 msgid "Language"
 msgstr "Sprache"
 
@@ -3398,6 +3422,12 @@ msgstr "Starten"
 #: src/modules/object-record/object-options-dropdown/components/ObjectOptionsDropdownLayoutContent.tsx
 msgid "Layout"
 msgstr "Layout"
+
+#. js-lingui-id: hj4z2B
+#: src/modules/ui/navigation/navigation-drawer/components/MultiWorkspaceDropdown/internal/MultiWorkspaceDropdownRTLLayoutComponents.tsx
+#: src/components/RTLToggler.tsx
+msgid "Layout Direction"
+msgstr ""
 
 #. js-lingui-id: 8QyoLb
 #: src/modules/settings/accounts/components/SettingsAccountsConnectionForm.tsx
