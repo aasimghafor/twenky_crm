@@ -19,7 +19,7 @@ import styled from '@emotion/styled';
 import { AnimatePresence, LayoutGroup, motion } from 'framer-motion';
 import { Outlet } from 'react-router-dom';
 import { useScreenSize } from 'twenty-ui/utilities';
-
+import { useIsRTL } from '~/hooks/useIsRTL';
 const StyledLayout = styled.div`
   background: ${({ theme }) => theme.background.noisy};
   display: flex;
@@ -40,6 +40,13 @@ const StyledPageContainer = styled(motion.div)`
   flex: 1 1 auto;
   flex-direction: row;
   min-height: 0;
+
+  /*RTL-aware flex direction*/
+  ${({ $isRTL }) =>
+    $isRTL &&
+    css`
+      flex-direction: row-reverse;
+    `}
 `;
 
 const StyledAppNavigationDrawer = styled(AppNavigationDrawer)`
@@ -59,6 +66,7 @@ const StyledMainContainer = styled.div`
 export const DefaultLayout = () => {
   const isMobile = useIsMobile();
   const isSettingsPage = useIsSettingsPage();
+  const isRTL = useIsRTL();
   const theme = useTheme();
   const windowsWidth = useScreenSize().width;
   const showAuthModal = useShowAuthModal();

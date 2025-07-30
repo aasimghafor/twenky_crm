@@ -1,3 +1,21 @@
+[dir="rtl"]{
+  text-align: right;
+}
+[dir="rtl"] * {
+  direction: rtl;
+}
+
+[dir="ltr"] * {
+  direction: ltr;
+}
+[dir='rtl'] .navigation-drawer{
+  border-left: 1px solid var(--border-color);
+  border-right: none;
+}
+[dir="ltr"] .navigation-drawer{
+  border-right: 1px solid var(--border-color);
+  border-left: none;
+}
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;

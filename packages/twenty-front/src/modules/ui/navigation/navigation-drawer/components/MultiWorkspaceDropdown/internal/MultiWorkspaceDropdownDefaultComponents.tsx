@@ -37,13 +37,14 @@ import {
   MenuItemSelectAvatar,
   UndecoratedLink,
 } from 'twenty-ui/navigation';
+import { LanguageSwitcher } from '~/components/LanguageSwitcher';
+import { RTLToggler } from '~/components/RTLToggler';
 import {
   AvailableWorkspace,
   useSignUpInNewWorkspaceMutation,
 } from '~/generated-metadata/graphql';
 import { getWorkspaceUrl } from '~/utils/getWorkspaceUrl';
 import { getSettingsPath } from '~/utils/navigation/getSettingsPath';
-
 const StyledDescription = styled.div`
   color: ${({ theme }) => theme.font.color.light};
   padding-left: ${({ theme }) => theme.spacing(1)};
@@ -192,6 +193,12 @@ export const MultiWorkspaceDropdownDefaultComponents = () => {
           }
           hasSubMenu={true}
           onClick={() => setMultiWorkspaceDropdownState('themes')}
+        />
+        <LanguageSwitcher
+          onClick={() => setMultiWorkspaceDropdownState('languages')}
+        />
+        <RTLToggler
+          onClick={() => setMultiWorkspaceDropdownState('rtl-layout')}
         />
         <UndecoratedLink
           to={getSettingsPath(SettingsPath.WorkspaceMembersPage)}

@@ -11,3 +11,4 @@ export const dynamicActivate = async (locale: keyof typeof APP_LOCALES) => {
   i18n.load(locale, messages);
   i18n.activate(locale);
 };
+ 

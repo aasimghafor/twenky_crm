@@ -6,8 +6,11 @@ import { TabList } from '@/ui/layout/tab-list/components/TabList';
 import { t } from '@lingui/core/macro';
 import { useRecoilValue } from 'recoil';
 import { IconHeart, IconSettings2, IconVariable } from 'twenty-ui/display';
-
+import { useIsRTL } from '~/hooks/useIsRTL';
+import { rtlAware } from '~/utils/rtl';
 export const SettingsAdminContent = () => {
+  const isRTL = useIsRTL();
+  const rtl = rtlAware(isRTL)
   const currentUser = useRecoilValue(currentUserState);
 
   const canAccessFullAdminPanel = currentUser?.canAccessFullAdminPanel;
